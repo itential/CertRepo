@@ -1,0 +1,62 @@
+{
+  "bundleName": "@local/create-artifact-test",
+  "version": "0.0.1",
+  "fingerprint": "628d220fa8f736331a27db84",
+  "createdEpoch": "1653416463038",
+  "artifacts": [
+    {
+      "id": "Test Prebuilt Wizard",
+      "name": "Test Prebuilt Wizard",
+      "type": "automation",
+      "location": "/bundles/automations/Test Prebuilt Wizard.json",
+      "properties": {
+        "entryPoint": false
+      }
+    },
+    {
+      "id": "CC-Test-Artifact",
+      "name": "CC-Test-Artifact",
+      "type": "workflow",
+      "location": "/bundles/workflows/CC-Test-Artifact.json",
+      "properties": {
+        "entryPoint": false
+      }
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "type": "json-forms",
+      "location": "/bundles/json_forms/test.json",
+      "properties": {
+        "entryPoint": false
+      }
+    },
+    {
+      "id": "test-gc",
+      "name": "test-gc",
+      "type": "golden-config",
+      "location": "/bundles/ucm_golden_configs/test-gc.json",
+      "properties": {
+        "entryPoint": false
+      }
+    },
+    {
+      "id": "6279716b7d92756eae81ed51",
+      "name": "test-cc-jst",
+      "type": "transformation",
+      "location": "/bundles/transformations/test-cc-jst.json",
+      "properties": {
+        "entryPoint": false
+      }
+    },
+    {
+      "id": "6269c8027d92756eae81ed50",
+      "name": "testTravis",
+      "type": "transformation",
+      "location": "/bundles/transformations/testTravis.json",
+      "properties": {
+        "entryPoint": false
+      }
+    }
+  ]
+}
