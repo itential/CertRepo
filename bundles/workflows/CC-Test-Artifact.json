@@ -129,9 +129,44 @@
         }
       ],
       "groups": [],
-      "x": 0.8392156862745098,
-      "y": 0.6174582798459564,
+      "x": 0.9279359430604982,
+      "y": 0.6173913043478261,
       "task_name": "testTravis",
+      "retrySettings": null
+    },
+    "217b": {
+      "name": "transformation",
+      "canvasName": "transformation",
+      "summary": "AppendABCtoArray",
+      "description": "Perform a JSON Transformation using the JST library.",
+      "location": "Application",
+      "locationType": null,
+      "app": "WorkFlowEngine",
+      "type": "operation",
+      "displayName": "WorkFlowEngine",
+      "variables": {
+        "incoming": {
+          "tr_id": "62474e32c22fee1ff4264db3",
+          "variableMap": {},
+          "options": {
+            "extractOutput": true,
+            "validateIncoming": true,
+            "revertToDefaultValue": true
+          }
+        },
+        "outgoing": {}
+      },
+      "deprecated": false,
+      "matched": [
+        {
+          "key": "description",
+          "highlightString": "Perform a JSON Transformation using the <span class='highlight-string'>JST</span> library."
+        }
+      ],
+      "groups": [],
+      "x": 0.8620996441281139,
+      "y": 0.7797101449275362,
+      "task_name": "AppendABCtoArray",
       "retrySettings": null
     }
   },
@@ -150,7 +185,7 @@
       }
     },
     "b765": {
-      "bf25": {
+      "217b": {
         "type": "standard",
         "state": "success"
       }
@@ -160,17 +195,23 @@
         "type": "standard",
         "state": "success"
       }
+    },
+    "217b": {
+      "bf25": {
+        "type": "standard",
+        "state": "success"
+      }
     }
   },
   "font_size": 12,
-  "last_updated": "2022-05-10T15:55:14.550Z",
+  "last_updated": "2022-05-24T18:23:49.083Z",
   "last_updated_by": {
     "provenance": "Itential-Okta",
     "username": "clarisa.colton@itential.com",
     "firstname": "Clarisa",
     "inactive": false
   },
-  "lastUpdatedVersion": "5.44.8-2021.2.2.0",
+  "lastUpdatedVersion": "5.44.8-2021.2.19.0",
   "inputSchema": {
     "type": "object",
     "properties": {}

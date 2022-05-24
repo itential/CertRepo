@@ -1,0 +1,27 @@
+{
+  "_id": "62474e32c22fee1ff4264db3",
+  "name": "AppendABCtoArray",
+  "description": "",
+  "incoming": [],
+  "outgoing": [],
+  "steps": [],
+  "functions": [],
+  "view": {
+    "col": 2,
+    "row": 5
+  },
+  "created": "2022-04-01T19:10:42.952Z",
+  "createdBy": {
+    "_id": "6245e755ed4a671f6525415a",
+    "provenance": "Itential-Okta",
+    "username": "kambiz.koneshlo@itential.com"
+  },
+  "lastUpdated": "2022-04-01T19:10:42.952Z",
+  "lastUpdatedBy": {
+    "_id": "6245e755ed4a671f6525415a",
+    "provenance": "Itential-Okta",
+    "username": "kambiz.koneshlo@itential.com"
+  },
+  "version": "3.20.4-2021.2.1",
+  "tags": []
+}

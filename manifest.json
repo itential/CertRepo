@@ -1,8 +1,8 @@
 {
   "bundleName": "@local/create-artifact-test",
   "version": "0.0.1",
-  "fingerprint": "628d220fa8f736331a27db84",
-  "createdEpoch": "1653416463038",
+  "fingerprint": "628d2314a8f736331a27db86",
+  "createdEpoch": "1653416724625",
   "artifacts": [
     {
       "id": "Test Prebuilt Wizard",
@@ -54,6 +54,15 @@
       "name": "testTravis",
       "type": "transformation",
       "location": "/bundles/transformations/testTravis.json",
+      "properties": {
+        "entryPoint": false
+      }
+    },
+    {
+      "id": "62474e32c22fee1ff4264db3",
+      "name": "AppendABCtoArray",
+      "type": "transformation",
+      "location": "/bundles/transformations/AppendABCtoArray.json",
       "properties": {
         "entryPoint": false
       }
