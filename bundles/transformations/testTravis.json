@@ -1,0 +1,393 @@
+{
+  "_id": "6269c8027d92756eae81ed50",
+  "name": "testTravis",
+  "description": "",
+  "incoming": [
+    {
+      "$id": "input",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mdd:openconfig": {
+            "type": "object",
+            "properties": {
+              "openconfig-system:system": {
+                "type": "object",
+                "properties": {
+                  "clock": {
+                    "type": "object",
+                    "properties": {
+                      "config": {
+                        "type": "object",
+                        "properties": {
+                          "timezone-name": {
+                            "type": "string",
+                            "examples": [
+                              "EDT -4 0"
+                            ]
+                          }
+                        },
+                        "required": []
+                      }
+                    },
+                    "required": []
+                  },
+                  "config": {
+                    "type": "object",
+                    "properties": {
+                      "openconfig-system-ext:console-exec-timeout-seconds": {
+                        "type": "string",
+                        "examples": [
+                          "600"
+                        ]
+                      },
+                      "domain-name": {
+                        "type": "string",
+                        "examples": [
+                          "mdd%2Ecisco%2Ecom"
+                        ]
+                      },
+                      "hostname": {
+                        "type": "string",
+                        "examples": [
+                          "BLAH"
+                        ]
+                      }
+                    },
+                    "required": []
+                  },
+                  "openconfig-system-ext:services": {
+                    "type": "object",
+                    "properties": {
+                      "finger": {
+                        "type": "boolean",
+                        "examples": [
+                          true,
+                          false
+                        ]
+                      },
+                      "http": {
+                        "type": "object",
+                        "properties": {
+                          "ip-http-max-connections": {
+                            "type": "integer",
+                            "examples": [
+                              2
+                            ]
+                          }
+                        },
+                        "required": []
+                      }
+                    },
+                    "required": []
+                  },
+                  "dns": {
+                    "type": "object",
+                    "properties": {
+                      "servers": {
+                        "type": "object",
+                        "properties": {
+                          "server": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "address": {
+                                  "type": "string",
+                                  "examples": [
+                                    "208%2E67%2E222%2E222"
+                                  ],
+                                  "format": "ipv4"
+                                },
+                                "config": {
+                                  "type": "object",
+                                  "properties": {
+                                    "address": {
+                                      "type": "string",
+                                      "examples": [
+                                        "208%2E67%2E222%2E222"
+                                      ],
+                                      "format": "ipv4"
+                                    },
+                                    "port": {
+                                      "type": "string",
+                                      "examples": [
+                                        "53"
+                                      ]
+                                    }
+                                  },
+                                  "required": []
+                                }
+                              },
+                              "required": []
+                            }
+                          }
+                        },
+                        "required": []
+                      }
+                    },
+                    "required": []
+                  },
+                  "ntp": {
+                    "type": "object",
+                    "properties": {
+                      "config": {
+                        "type": "object",
+                        "properties": {
+                          "openconfig-system-ext:ntp-enable-logging": {
+                            "type": "boolean",
+                            "examples": [
+                              true,
+                              false
+                            ]
+                          },
+                          "enable-ntp-auth": {
+                            "type": "boolean",
+                            "examples": [
+                              true,
+                              false
+                            ]
+                          },
+                          "enabled": {
+                            "type": "boolean",
+                            "examples": [
+                              true,
+                              false
+                            ]
+                          }
+                        },
+                        "required": []
+                      },
+                      "servers": {
+                        "type": "object",
+                        "properties": {
+                          "server": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "address": {
+                                  "type": "string",
+                                  "examples": [
+                                    "1%2Eus%2Epool%2Entp%2Eorg"
+                                  ]
+                                },
+                                "config": {
+                                  "type": "object",
+                                  "properties": {
+                                    "address": {
+                                      "type": "string",
+                                      "examples": [
+                                        "1%2Eus%2Epool%2Entp%2Eorg"
+                                      ]
+                                    },
+                                    "association-type": {
+                                      "type": "string",
+                                      "examples": [
+                                        "SERVER"
+                                      ]
+                                    },
+                                    "iburst": {
+                                      "type": "boolean",
+                                      "examples": [
+                                        true,
+                                        false
+                                      ]
+                                    }
+                                  },
+                                  "required": []
+                                }
+                              },
+                              "required": []
+                            }
+                          }
+                        },
+                        "required": []
+                      }
+                    },
+                    "required": []
+                  },
+                  "ssh-server": {
+                    "type": "object",
+                    "properties": {
+                      "config": {
+                        "type": "object",
+                        "properties": {
+                          "openconfig-system-ext:absolute-timeout-minutes": {
+                            "type": "string",
+                            "examples": [
+                              "1200"
+                            ]
+                          },
+                          "openconfig-system-ext:ssh-timeout": {
+                            "type": "string",
+                            "examples": [
+                              "60"
+                            ]
+                          },
+                          "enable": {
+                            "type": "boolean",
+                            "examples": [
+                              true,
+                              false
+                            ]
+                          },
+                          "protocol-version": {
+                            "type": "string",
+                            "examples": [
+                              "V2"
+                            ]
+                          },
+                          "rate-limit": {
+                            "type": "string",
+                            "examples": [
+                              "0"
+                            ]
+                          },
+                          "session-limit": {
+                            "type": "string",
+                            "examples": [
+                              "16"
+                            ]
+                          },
+                          "timeout": {
+                            "type": "string",
+                            "examples": [
+                              "1800"
+                            ]
+                          }
+                        },
+                        "required": []
+                      }
+                    },
+                    "required": []
+                  }
+                },
+                "required": []
+              }
+            },
+            "required": []
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "outgoing": [
+    {
+      "$id": "output1",
+      "type": "object"
+    },
+    {
+      "$id": "output2",
+      "type": "object"
+    }
+  ],
+  "steps": [
+    {
+      "id": 2,
+      "type": "method",
+      "library": "Array",
+      "method": "getIndex",
+      "args": [
+        null,
+        0
+      ],
+      "view": {
+        "row": 1,
+        "col": 1
+      }
+    },
+    {
+      "id": 3,
+      "type": "method",
+      "library": "Array",
+      "method": "getIndex",
+      "args": [
+        null,
+        1
+      ],
+      "view": {
+        "row": 2,
+        "col": 1
+      }
+    },
+    {
+      "id": 4,
+      "type": "assign",
+      "from": {
+        "location": "incoming",
+        "name": "input",
+        "ptr": ""
+      },
+      "to": {
+        "location": "method",
+        "name": 2,
+        "ptr": "/args/0/value"
+      }
+    },
+    {
+      "id": 5,
+      "type": "assign",
+      "from": {
+        "location": "incoming",
+        "name": "input",
+        "ptr": ""
+      },
+      "to": {
+        "location": "method",
+        "name": 3,
+        "ptr": "/args/0/value"
+      }
+    },
+    {
+      "id": 6,
+      "type": "assign",
+      "from": {
+        "location": "method",
+        "name": 2,
+        "ptr": "/return"
+      },
+      "to": {
+        "location": "outgoing",
+        "name": "output1",
+        "ptr": ""
+      }
+    },
+    {
+      "id": 7,
+      "type": "assign",
+      "from": {
+        "location": "method",
+        "name": 3,
+        "ptr": "/return"
+      },
+      "to": {
+        "location": "outgoing",
+        "name": "output2",
+        "ptr": ""
+      }
+    }
+  ],
+  "functions": [],
+  "comments": [],
+  "view": {
+    "col": 1,
+    "row": 5
+  },
+  "created": "2022-04-27T22:47:30.779Z",
+  "createdBy": {
+    "_id": "61e785bd0aca955e189258e4",
+    "provenance": "Itential-Okta",
+    "username": "travis.nicks@itential.com"
+  },
+  "lastUpdated": "2022-04-28T14:54:16.706Z",
+  "lastUpdatedBy": {
+    "_id": "61e785bd0aca955e189258e4",
+    "provenance": "Itential-Okta",
+    "username": "travis.nicks@itential.com"
+  },
+  "version": "3.20.5",
+  "tags": []
+}
