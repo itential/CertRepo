@@ -1,0 +1,201 @@
+{
+  "name": "CC-Test-Artifact",
+  "type": "automation",
+  "tasks": {
+    "workflow_start": {
+      "name": "workflow_start",
+      "groups": [],
+      "x": 0,
+      "y": 0.5
+    },
+    "workflow_end": {
+      "name": "workflow_end",
+      "groups": [],
+      "x": 1,
+      "y": 0.5
+    },
+    "6ea5": {
+      "name": "transformation",
+      "canvasName": "transformation",
+      "summary": "test-cc-jst",
+      "description": "Perform a JSON Transformation using the JST library.",
+      "location": "Application",
+      "locationType": null,
+      "app": "WorkFlowEngine",
+      "type": "operation",
+      "displayName": "WorkFlowEngine",
+      "variables": {
+        "incoming": {
+          "tr_id": "6279716b7d92756eae81ed51",
+          "variableMap": {
+            "input": "abc"
+          },
+          "options": {
+            "extractOutput": true,
+            "validateIncoming": true,
+            "revertToDefaultValue": true
+          }
+        },
+        "outgoing": {
+          "output": null
+        }
+      },
+      "deprecated": false,
+      "matched": [
+        {
+          "key": "description",
+          "highlightString": "Perform a JSON Transformation using the <span class='highlight-string'>JST</span> library."
+        }
+      ],
+      "groups": [],
+      "x": 0.49747242647058826,
+      "y": 0.5,
+      "task_name": "test-cc-jst",
+      "retrySettings": null
+    },
+    "b765": {
+      "name": "getGoldenConfigTree",
+      "canvasName": "getGoldenConfigTree",
+      "summary": "Get summary of a Golden Config tree.",
+      "description": "Get summary of the specified Golden Config tree.",
+      "location": "Application",
+      "locationType": null,
+      "app": "ConfigurationManager",
+      "type": "automatic",
+      "displayName": "ConfigurationManager",
+      "variables": {
+        "incoming": {
+          "treeId": "61649ea2292c9400b4060714"
+        },
+        "outgoing": {
+          "tree": null
+        },
+        "error": "",
+        "decorators": []
+      },
+      "deprecated": false,
+      "matched": [
+        {
+          "key": "canvasName",
+          "highlightString": "get<span class='highlight-string'>Golden</span>ConfigTree"
+        },
+        {
+          "key": "summary",
+          "highlightString": "Get summary of a <span class='highlight-string'>Golden</span> Config tree."
+        },
+        {
+          "key": "description",
+          "highlightString": "Get summary of the specified <span class='highlight-string'>Golden</span> Config tree."
+        }
+      ],
+      "groups": [],
+      "actor": "Pronghorn",
+      "x": 0.6956862745098039,
+      "y": 0.5357142857142857,
+      "scheduled": false
+    },
+    "bf25": {
+      "name": "transformation",
+      "canvasName": "transformation",
+      "summary": "testTravis",
+      "description": "Perform a JSON Transformation using the JST library.",
+      "location": "Application",
+      "locationType": null,
+      "app": "WorkFlowEngine",
+      "type": "operation",
+      "displayName": "WorkFlowEngine",
+      "variables": {
+        "incoming": {
+          "tr_id": "6269c8027d92756eae81ed50",
+          "variableMap": {
+            "input": ""
+          },
+          "options": {
+            "extractOutput": false,
+            "validateIncoming": true,
+            "revertToDefaultValue": true
+          }
+        },
+        "outgoing": {
+          "output1": null,
+          "output2": null
+        }
+      },
+      "deprecated": false,
+      "matched": [
+        {
+          "key": "description",
+          "highlightString": "Perform a JSON Transformation using the <span class='highlight-string'>JST</span> library."
+        }
+      ],
+      "groups": [],
+      "x": 0.8392156862745098,
+      "y": 0.6174582798459564,
+      "task_name": "testTravis",
+      "retrySettings": null
+    }
+  },
+  "transitions": {
+    "workflow_start": {
+      "6ea5": {
+        "type": "standard",
+        "state": "success"
+      }
+    },
+    "workflow_end": {},
+    "6ea5": {
+      "b765": {
+        "type": "standard",
+        "state": "success"
+      }
+    },
+    "b765": {
+      "bf25": {
+        "type": "standard",
+        "state": "success"
+      }
+    },
+    "bf25": {
+      "workflow_end": {
+        "type": "standard",
+        "state": "success"
+      }
+    }
+  },
+  "font_size": 12,
+  "last_updated": "2022-05-10T15:55:14.550Z",
+  "last_updated_by": {
+    "provenance": "Itential-Okta",
+    "username": "clarisa.colton@itential.com",
+    "firstname": "Clarisa",
+    "inactive": false
+  },
+  "lastUpdatedVersion": "5.44.8-2021.2.2.0",
+  "inputSchema": {
+    "type": "object",
+    "properties": {}
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "_id": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{24}$"
+      },
+      "initiator": {
+        "type": "string"
+      }
+    }
+  },
+  "created": "2022-05-09T19:53:45.212Z",
+  "created_by": {
+    "provenance": "Itential-Okta",
+    "username": "clarisa.colton@itential.com",
+    "firstname": "Clarisa",
+    "inactive": false
+  },
+  "createdVersion": "5.44.8-2021.2.2.0",
+  "tags": [],
+  "groups": [],
+  "migrationVersion": 1
+}
